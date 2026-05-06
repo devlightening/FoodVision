@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>FoodVision</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main class="container">
+      <h1>FoodVision</h1>
+      <p class="subtitle">Upload a food photo and get a prediction (10-class prototype).</p>
+
+      <section class="card">
+        <label class="file">
+          <input id="fileInput" type="file" accept="image/*" />
+          <span>Choose an image</span>
+        </label>
+
+        <div class="previewWrap">
+          <img id="preview" alt="Preview" />
+        </div>
+
+        <button id="predictBtn" disabled>Predict</button>
+        <div id="status" class="status"></div>
+        <pre id="result" class="result"></pre>
+      </section>
+
+      <footer class="footer">
+        <span>Backend: http://127.0.0.1:5000</span>
+      </footer>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
+
